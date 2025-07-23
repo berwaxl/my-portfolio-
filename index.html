@@ -1,155 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohit Berwal | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 60px;
-    }
-
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .project {
-      flex: 1 1 30%;
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .contact input, .contact textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    footer {
-      text-align: center;
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px 0;
-    }
-
-    /* Media Queries */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .project {
-        flex: 1 1 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Mohit Berwal</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Mohit Berwal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <div class="logo">Mohit Berwal</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
     </nav>
-  </header>
 
-  <div class="container">
-    <section id="about">
+    <!-- Hero Section -->
+    <header id="hero">
+      <div class="main-hero">
+      <h1 class="slide-up">HAY! I'M Mohit Berwal</h1>
+      <h2 class="fade-in">Web Developer</h2>
+      <a href="#contact" class="btn zoom-in">Contact Me</a>
+
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="appear">
       <h2>About Me</h2>
-      <p>I am a passionate Web Developer skilled in HTML, CSS, JavaScript, React, PHP, and WordPress. I specialize in creating dynamic, responsive websites.</p>
+      <p>
+        Design & Develop: I design and build portfolio websites, landing pages,
+        and business sites tailored to client goals. Showcase Work: I present
+        projects in an attractive, accessible format using clear layouts and
+        accompanied visuals. Client Collaboration: I work closely with clients
+        to understand their needs and deliver high-quality, customized
+        solutions. Growth Support: I help individuals and small businesses
+        establish a compelling digital footprint, offering guidance on
+        deployment and best practices.
+      </p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="appear">
       <h2>Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Portfolio Website</h3>
-          <p>A personal portfolio built with HTML, CSS, and JavaScript to showcase my skills.</p>
-        </div>
-        <div class="project">
-          <h3>WordPress Blog</h3>
-          <p>Developed a fast, SEO-optimized blog using WordPress and custom themes.</p>
-        </div>
-        <div class="project">
-          <h3>React Todo App</h3>
-          <p>A task management app built with React and Local Storage.</p>
-        </div>
+      <div class="project-list">
+        <a href="http://127.0.0.1:5500/dpl.html" target="_blank">
+          <div class="project-card hover-lift">
+            <img src="aalimg.png" alt="Project 1" />
+            <h3>Dynamic Product Listing</h3>
+            <p>A Dynamic Product Listing website is an e-commerce website where the product listing pages (PLPs) automatically update and display products based on various real-time factors such as user behavior, preferences, inventory levels, and market conditions. Unlike static listing pages that show the same content to every visitor, dynamic product listings personalize and adjust the product data (like prices, availability, product recommendations) dynamically to improve user engagement and sales conversions.</p>
+          </div>
+        </a>
+        <a href="http://127.0.0.1:5500/blog.html" target="_blank">
+          <div class="project-card hover-lift">
+            <img src="ChatGPT Image Jul 23, 2025, 11_10_24 AM.png" alt="Project 2" />
+            <h3>Clean Blog Page</h3>
+            <p>A Clean Blog Page describes a blog web page or template designed for simplicity, clarity, and modern aesthetics, emphasizing elegance and ease of use. The term is popular in website design, especially in reference to themes and layouts that prioritize readability, whitespace, and a visually uncluttered presentation of content.</p>
+          </div></a
+        >
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <section id="resume" class="appear">
+      <h2>Resume</h2>
+      <a
+        href="Mohit'sResume.jpg"
+        target="_blank"
+        class="btn fade-in"
+        >Download Resume</a
+      >
+      <h3>Education</h3>
+      <ul>
+        <li>Bachelor's in Computer Science, CDLU University (2025-2029)</li>
+      </ul>
+      <h3>Experience</h3>
+      <ul>
+        <li>Front end devloper – Sircl tech pvt ltd (2024-2025)</li>
+      </ul>
     </section>
+    <section id="contact" class="appear">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn zoom-in">Send</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+
+    <!-- <footer>
+      <p>&copy; 2025 Mohit Berwal. All rights reserved.</p>
+    </footer> -->
+
+    <footer>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/c.mberwal?igsh=MWVocHp5ajl4azF0cQ=="><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/berwaxl/demo-repo/commits?author=berwaxl"><i class="fa-brands fa-github"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
   </div>
+  <p>&copy; 2025 Mohit Berwal. All rights reserved.</p>
+</footer>
 
-  <footer>
-    <p>&copy; 2025 Mohit Berwal | All Rights Reserved</p>
-  </footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
