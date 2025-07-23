@@ -1,0 +1,131 @@
+:root {
+  --primary: #4158D0;
+  --accent: #FFCC70;
+  --light: #f9f9fb;
+  --dark: #1d1d1f;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 2rem 1rem 1.3rem 1rem;
+  text-align: center;
+}
+.filter-bar {
+  margin: 1.2rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.filter-btn {
+  border: none;
+  background: #fff;
+  color: var(--primary);
+  padding: 0.55rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 22px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background .2s, color .22s;
+}
+.filter-btn.active, .filter-btn:hover {
+  background: var(--accent);
+  color: #1d1d1f;
+}
+#search {
+  padding: 0.55rem 1.2rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 18px;
+  font-size: 1rem;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.product-card {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(65,88,208,0.09);
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s;
+}
+.product-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.product-card img { 
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.product-image {
+  width: 350px;   
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+.product-image-0 {
+  background-image: url('headphone.png');
+}
+.product-image-1 {
+  background-image: url('Cshirt.png');
+}
+.product-image-2 {
+  background-image: url('mug.png');
+}
+.product-image-3 {
+  background-image: url('speekr.png');
+}
+.product-image-4 {
+  background-image: url('lemp.png');
+}
+.product-image-5 {
+  background-image: url('images/summer-dress.jpg');
+}
+
+.product-info {
+  padding: 1.2rem 1rem 0 1rem;
+  flex: 1;
+}
+.product-title {
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin: 0 0 0.5rem 0;
+}
+.product-category {
+  font-size: 0.92rem;
+  color: var(--dark);
+  opacity: 0.74;
+}
+.product-price {
+  margin: 0.8rem 0 0 0;
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.3rem;
+  }
+  .filter-bar {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}

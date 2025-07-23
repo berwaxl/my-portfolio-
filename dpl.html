@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Product Listing</title>
+  <link rel="stylesheet" href="dpl.css">
+</head>
+<body>
+  <header>
+    <h1>Shop Products</h1>
+    <div class="filter-bar">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="electronics">Electronics</button>
+      <button class="filter-btn" data-filter="fashion">Fashion</button>
+      <button class="filter-btn" data-filter="home">Home</button>
+      <input type="text" id="search" placeholder="Search products...">
+    </div>
+  </header>
+  <main>
+    <div class="product-list" id="productList">
+    </div>
+  </main> 
+  <script src="dpl.js"></script>
+</body>
+</html>
