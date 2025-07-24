@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Mohit Berwal | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
@@ -22,10 +26,9 @@
     <!-- Hero Section -->
     <header id="hero">
       <div class="main-hero">
-      <h1 class="slide-up">HAY! I'M Mohit Berwal</h1>
-      <h2 class="fade-in">Web Developer</h2>
-      <a href="#contact" class="btn zoom-in">Contact Me</a>
-
+        <h1 class="slide-up">HAY! I'M Mohit Berwal</h1>
+        <h2 class="fade-in">Web Developer</h2>
+        <a href="#contact" class="btn zoom-in">Contact Me</a>
       </div>
     </header>
 
@@ -33,14 +36,24 @@
     <section id="about" class="appear">
       <h2>About Me</h2>
       <p>
-        Design & Develop: I design and build portfolio websites, landing pages,
-        and business sites tailored to client goals. Showcase Work: I present
-        projects in an attractive, accessible format using clear layouts and
-        accompanied visuals. Client Collaboration: I work closely with clients
-        to understand their needs and deliver high-quality, customized
-        solutions. Growth Support: I help individuals and small businesses
-        establish a compelling digital footprint, offering guidance on
-        deployment and best practices.
+        Design & Development I specialize in designing and developing
+        professional websites — including portfolio sites, landing pages, and
+        full-scale business websites — all tailored specifically to meet client
+        goals. My approach ensures clean design, responsive layouts, and
+        seamless user experiences across devices. Project Showcase I take pride
+        in presenting each project with visual clarity and appeal. Every website
+        or portfolio I create includes well-structured content, intuitive
+        navigation, and eye-catching visuals, making it easy for visitors to
+        explore and engage with the work on display. Client Collaboration I
+        believe that the best results come from strong communication. I work
+        hand-in-hand with each client, gaining a clear understanding of their
+        goals, preferences, and brand identity. This collaboration enables me to
+        deliver personalized, high-quality solutions that truly reflect their
+        vision. Support for Growth My mission is to empower individuals,
+        startups, and small businesses by helping them build a strong digital
+        presence. From strategic planning to deployment, I offer ongoing support
+        and practical guidance, ensuring their online platforms are effective,
+        optimized, and ready to grow with them.
       </p>
     </section>
 
@@ -51,14 +64,31 @@
           <div class="project-card hover-lift">
             <img src="aalimg.png" alt="Project 1" />
             <h3>Dynamic Product Listing</h3>
-            <p>A Dynamic Product Listing website is an e-commerce website where the product listing pages (PLPs) automatically update and display products based on various real-time factors such as user behavior, preferences, inventory levels, and market conditions. Unlike static listing pages that show the same content to every visitor, dynamic product listings personalize and adjust the product data (like prices, availability, product recommendations) dynamically to improve user engagement and sales conversions.</p>
+            <p>
+              A Dynamic Product Listing website is an e-commerce website where
+              the product listing pages (PLPs) automatically update and display
+              products based on various real-time factors such as user behavior,
+              preferences, inventory levels. dynamic product listings
+              personalize , dynamically to improve user engagement and sales
+              conversions.
+            </p>
           </div>
         </a>
         <a href="http://127.0.0.1:5500/blog.html" target="_blank">
           <div class="project-card hover-lift">
-            <img src="ChatGPT Image Jul 23, 2025, 11_10_24 AM.png" alt="Project 2" />
+            <img
+              src="ChatGPT Image Jul 23, 2025, 11_10_24 AM.png"
+              alt="Project 2"
+            />
             <h3>Clean Blog Page</h3>
-            <p>A Clean Blog Page describes a blog web page or template designed for simplicity, clarity, and modern aesthetics, emphasizing elegance and ease of use. The term is popular in website design, especially in reference to themes and layouts that prioritize readability, whitespace, and a visually uncluttered presentation of content.</p>
+            <p>
+              A Clean Blog Page describes a blog web page or template designed
+              for simplicity, clarity, and modern aesthetics, emphasizing
+              elegance and ease of use. The term is popular in website design,
+              especially in reference to themes and layouts that prioritize
+              readability, whitespace, and a visually uncluttered presentation
+              of content.
+            </p>
           </div></a
         >
       </div>
@@ -66,10 +96,7 @@
 
     <section id="resume" class="appear">
       <h2>Resume</h2>
-      <a
-        href="Mohit'sResume.jpg"
-        target="_blank"
-        class="btn fade-in"
+      <a href="Mohit'sResume.jpg" target="_blank" class="btn fade-in"
         >Download Resume</a
       >
       <h3>Education</h3>
@@ -81,7 +108,7 @@
         <li>Front end devloper – Sircl tech pvt ltd (2024-2025)</li>
       </ul>
     </section>
-    <section id="contact" class="appear">
+    <!-- <section id="contact" class="appear">
       <h2>Contact</h2>
       <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name" required />
@@ -90,6 +117,38 @@
         <button type="submit" class="btn zoom-in">Send</button>
       </form>
       <div id="formMessage"></div>
+    </section> -->
+
+    <section id="contact" class="appear">
+      <h2>Contact</h2>
+
+      <form id="contactForm">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit" class="btn zoom-in">Send</button>
+      </form>
+
+      <div id="formMessage"></div>
+
+      <div class="contact-details"></div>
     </section>
 
     <!-- <footer>
@@ -97,14 +156,18 @@
     </footer> -->
 
     <footer>
-  <div class="footer-social">
-    <a href="https://www.instagram.com/c.mberwal?igsh=MWVocHp5ajl4azF0cQ=="><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://github.com/berwaxl/demo-repo/commits?author=berwaxl"><i class="fa-brands fa-github"></i></a>
-    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-  </div>
-  <p>&copy; 2025 Mohit Berwal. All rights reserved.</p>
-</footer>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/c.mberwal?igsh=MWVocHp5ajl4azF0cQ=="
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://github.com/berwaxl/demo-repo/commits?author=berwaxl"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p>&copy; 2025 Mohit Berwal. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
